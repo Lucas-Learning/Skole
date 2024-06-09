@@ -30,7 +30,11 @@ namespace Skole
         {
             foreach (person p1 in personlist)
             {
-                Console.WriteLine($"{p1.FirstName} {p1.LastName}\nRolle: {p1.rolle}\nAlder: {p1.år}");
+                if (p1.rolle == "Admin")
+                {
+                    Console.WriteLine($"{p1.FirstName} {p1.LastName}\nRolle: {p1.rolle}\nAlder: {p1.år}");
+                }
+                
             }
         }
     }

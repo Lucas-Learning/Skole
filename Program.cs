@@ -29,7 +29,7 @@ namespace Skole
                 {
 
                     case "1":
-                        Console.WriteLine("Tryk 1 for at opret en student\nTryk 2 for at opret en lærer\nTryk 3 for at opret en Admin");
+                        Console.WriteLine("Tryk 1 for at opret en student\nTryk 2 for at opret en UV\nTryk 3 for at opret en Admin");
                         string valgperson = Console.ReadLine();
                         
                         if (valgperson == "1")

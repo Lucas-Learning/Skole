@@ -8,7 +8,7 @@ namespace Skole
 {
     public class UV : Person
     {
-        string Rolle = "Lære";
+        string Rolle = "UV";
         public void TilføjUV(List<person> personlist)
         {
             
@@ -30,8 +30,11 @@ namespace Skole
         public override void VisInfo(List<person> personlist)
         {  
             foreach(person p1 in personlist)
-            {       
+            {
+                if (p1.rolle == "UV")
+                {
                     Console.WriteLine($"{p1.FirstName} {p1.LastName}\nRolle: {p1.rolle}\nAlder: {p1.år}");
+                }
             }
         }
     }
